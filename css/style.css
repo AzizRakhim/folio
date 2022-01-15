@@ -1,4 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
 body{
     background-color: #fff;
     min-height: 100vh;
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-weight: 700;
 }
+
+.site-header{
+    min-width: 100vw;
+    padding: 8px 64px 8px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: #fff;
+}
+
+.logo-link{
+    text-decoration: none;
+    font-size: 1.5rem;
+    line-height: 1.42;
+    color: rgb(22, 28, 45);
+    letter-spacing: -0.5px;
+    font-weight: 700;
+}
+
+.site-logo{
+    margin: 0;
+}
+
+.nav-list{
+    list-style: none;
+}
+
+.nav-item{
+    position: relative;
+    padding: 18px;
+    font-size: 15px;
+    line-height: 24px;
+    text-transform: lowercase;
+    color: rgb(22, 28, 45);
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.bx-chevron-down{
+    margin-left: 10px;
+    font-size: 25px;
+    color: rgb(22, 28, 45);
+    transition: all 0.4s ease;
+}
+
+.drop-box{
+    position: absolute;
+    top: 150%;
+    min-width: 227px;
+    box-shadow: rgb(65 62 101 / 30%) 0px 52px 54px;
+    background-color: rgb(255, 255, 255);
+    padding: 15px 0;
+    border-top: 3px solid rgb(73, 95, 239);
+    border-radius: 0px 0px 10px 10px;
+    display: none;
+    transition: all 0.4s ease;
+}
+
+.nav-item:hover .drop-box{
+    top: 100%;
+    display: block;
+}
+
+.nav-item:hover{
+    color: #495fef;
+}
+
+.nav-item:hover .bx-chevron-down{
+    color: #495fef;
+    transform: rotate(-180deg);
+}
+
+.drop-list{
+    list-style: none;
+}
+
+.drop-item{
+    padding: 10px 30px;
+}
+
+.drop-link{
+    color: rgb(22, 28, 45);
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    text-decoration: none;
+    transition: all 0.3s ease-out;
+    text-transform: lowercase;
+}
+
+.drop-link:hover{
+    color: #495fef;
+}
+
+/* header end */
+/* hero-intro start */
+
+#hero-intro{
+    padding: 200px 0;
+}
+
+.container{
+    width: 1140px;
+}
+
+.hero-info{
+    width: 665px;
+    padding: 0 15px;
+}
+
+.hero-entry{
+    display: inline-block;
+    font-size: 0.8125rem;
+    line-height: 1.63;
+    letter-spacing: 1.63px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgb(22, 28, 45);
+    margin-bottom: 40px;
+}
+
+.hero-title{
+    font-size: 80px;
+    line-height: 84px;
+    letter-spacing: -2.81px;
+    font-weight: 700;
+    color: rgb(22, 28, 45);
+    margin-bottom: 52px;
+}
+
+.hero-btn{
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.63px;
+    text-transform: uppercase;
+    padding: 23px 30px;
+    box-shadow: rgb(3 3 3 / 12%) 0px 32px 54px;
+    border-radius: 50rem;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(73, 95, 239);
+    cursor: pointer;
+    position: relative;
+    transition: all 0.4s ease;
+}
+
+.hero-btn:hover{ 
+    animation: top 0.9s ease both;
+}
+
+@keyframes top {
+    0% {
+        bottom: 0;
+    }
+
+    100% {
+        bottom: 20px;
+    }
+}
+
+.bx-right-arrow-alt{
+    margin-left: 1.5rem;
+    font-size: 25px;
+}
+
+.hero-img{
+    padding: 0 15px;
+}
+
+/* hero end */
+/* main start */
+
+#site-main{
+    padding-top: 100px;
+}
+
+.main-list{
+    list-style: none;
+    margin-bottom: 2.5rem;
+}
+
+.main-item{
+    padding: 0 1rem;
+}
+
+.main-link{
+    color: rgb(22, 28, 45)
+    font-size: 0.8125rem;
+    line-height: 1.63;
+    letter-spacing: 1.63px;
+    text-transform: uppercase;
+    transition: all 0.3s ease-out;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.main-item:first-child .main-link{
+    color: rgb(73, 95, 239);
+}
+
+.images{
+    width: 100%;
+    position: relative;
+}
+
+.img-list-one{
+    width: 50%;
+    top: 0;
+    left: 0;
+    padding: 0 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 176px 238px 176px 367px;
+    grid-gap: 30px;
+}
+
+.img-list-two{
+    width: 50%;
+    top: 0;
+    right: 0;
+    padding: 0 15px;
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-template-rows: 367px 176px 238px;
+    grid-gap: 30px;
+}
+
+.img-item{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+img{
+    object-fit: cover ;
+}
+
+
+
+
+
