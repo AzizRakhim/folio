@@ -18,79 +18,6 @@ body{
     color: var(--text-color);
 }
 
-.arrow{
-    cursor: pointer;
-    width: 30px;
-    height: 50px;
-    border: 0px;
-    color: #fff;
-    font-size: 30px;
-    position: fixed;
-    top: 30%;
-    right: 162px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    background-color: #495fef;
-    outline: none;
-    z-index: 30;
-}
-
-.mode-btn{
-    position: fixed;
-    top: 30%;
-    right: 0;
-    background-color: #495fef;
-    box-shadow: rgb(22 28 45 / 18%) 0px 22px 34px;
-    max-width: 185px;
-    padding: 15px 13px;
-    border-bottom-left-radius: 25px;
-    z-index: 10;
-}
-
-.version{
-    display: inline-block;
-    color: #fff;
-    font-size: 13px;
-    letter-spacing: -0.09px;
-    line-height: 26px;
-    margin-bottom: 8px;
-}
-
-.color{
-    box-shadow: rgb(22 28 45 / 20%) 0px 12px 34px;
-    border-radius: 33px;
-    background-color: #fff;
-}
-
-.light{
-    cursor: pointer;
-    background: transparent;
-    border: none;
-    width: 50%;
-    font-size: 11px;
-    height: 42px;
-    padding-left: 15px;
-    padding-right: 15px;
-    letter-spacing: 1.38px;
-    text-transform: uppercase;
-    outline: none;
-}
-
-.dark{
-    background-color: #ced4e7;
-    cursor: pointer;
-    background: transparent;
-    border: none;
-    width: 50%;
-    font-size: 11px;
-    height: 42px;
-    padding-left: 15px;
-    padding-right: 15px;
-    letter-spacing: 1.38px;
-    text-transform: uppercase;
-    outline: none;
-}
-
 .site-header{
     min-width: 100vw;
     padding: 8px 64px 8px 30px;
@@ -335,7 +262,7 @@ body{
     line-height: 1.63;
     letter-spacing: 1.63px;
     text-transform: uppercase;
-    color: #161c2db3;
+    color: #b1ada8;
     margin-bottom: 8px;
 }
 
@@ -504,4 +431,14 @@ img{
     text-transform: uppercase;
 }
 
+.mode-btn{
+    text-transform: capitalize;
+    padding: 15px;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    position: fixed;
+    right: 0;
+    top: 39%;
+}
 
